@@ -117,14 +117,21 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
     {% endif %}
-    <div>
-      <form class="navbar-search pull-center" action="/search.html">
-          <input type="text" class="search-query" placeholder="Search" name="q" id="s" >
-      </form>
-    </div>
     
   </aside>
   <main>
+      <script>
+          (function() {
+            var cx = '013020631032955778974:c-8qktjozbg';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+      <gcse:search></gcse:search>
     {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.ads.main_menu %}
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <ins class="adsbygoogle ads-responsive"
