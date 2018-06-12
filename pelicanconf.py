@@ -59,3 +59,21 @@ DISPLAY_CATEGORIES_ON_MENU = False
 THEME = 'FLEX'
 DISQUS_SITENAME = 'leotsai'
 GOOGLE_ANALYTICS = 'UA-109186019-1'
+
+
+## Config google sitemap 
+PLUGIN_PATH = u"pelican-plugins"
+PLUGINS = ["sitemap"]
+SITEMAP = {
+    "format": "xml",
+    "priorities": {
+        "articles": 0.7,
+        "indexes": 0.5,
+        "pages": 0.3,
+    },
+    "changefreqs": {
+        "articles": "monthly",
+        "indexes": "daily",
+        "pages": "monthly",
+    }
+}
